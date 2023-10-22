@@ -1,0 +1,378 @@
+<html>
+    <head>
+        <title>Website Khoa CNTT</title>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+		<script type="text/javascript" src="jquery-3.6.4.min"></script>
+		<script src="luuniem.js" async></script>
+        <style>
+			*{
+    			box-sizing: border-box;
+			}
+			body{
+				margin: 0;
+				font-family: Helvetica, sans-serif;
+				background-color: #f0f2f5;
+				background-image: url("");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			#footer{
+				width: 1425;
+				height: 285;
+				background-color: white;
+			}
+			#footer1{
+				float: left;
+				width: 1425;
+				height: 219;
+				display: flex;
+				justify-content: space-evenly;
+			}
+			#footer1 ul{
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			#footer1 ul:first-of-type{
+				padding-left: 0;
+				list-style: none;
+				max-width: 288;
+			}
+			#footer1 ul:first-of-type li{
+				cursor: pointer;
+			}
+			#footer1 ul:nth-of-type(2) li{
+				cursor: pointer;
+			}
+
+			#footer1 li{
+				margin-top: 16;
+				color: #333;
+				font-size: 14;
+
+			}
+			#footer1 li:hover{
+				color: #2f80ed;   
+			}
+			#footer1 ul:nth-child(2){
+				padding-left: 0;
+				list-style: none;
+				
+			}
+			#footer1 ul:nth-child(3){
+				padding-left: 0;
+				list-style: none;
+				
+			}
+			#footer ul span{
+				color: #2f80ed;
+				font-weight: 700;
+			}
+			#footer ul:last-of-type li:hover{
+				color: #333;
+			}
+			#footerimg{
+				width: 348;
+				height: 198;
+				margin-top: 16;
+			}
+			#footerxh{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+			#footerxh img{
+				float: left;
+			}
+			#footerxh span{
+				color: #2f80ed;
+				font-size: 14;
+				float: right;
+				margin-left: 10;
+			}
+			#footercn{
+				width: 100%;
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				margin-top: 15;
+			}  
+			#footerimg > span {
+				display: block;
+				color: #222;
+				font-size: 14;
+				margin-top: 5px;
+			}
+			#footertt{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				padding: 18;
+				align-items: flex-start;
+			}
+			#footertt img{
+				width: 56;
+			}
+			#footer2{
+				width: 1425;
+				height: 66;
+				background-color: #f1f1f1;
+				float: right;
+				color: #666;
+				font-size: 12;
+				padding-top: 15;
+				line-height: 1.5;
+				text-align: center;
+			}
+			#header{
+				width: 1425;
+				height: 84;
+				background-color: transparent;
+				Color: #fb6e2e;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 45;
+				margin-top: 36;
+				font-weight: bolder;
+				font-family: 'Georgia';
+			}
+			#main{
+				
+				background-color: #f0f2f5;
+				
+			}
+			#main > div{
+				width: 396;
+				height: 393;
+				background-color: #fff;
+				margin-left: 515;
+				margin-bottom: 80;
+				border-radius: 8px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+				
+			}
+			
+			#tren{
+				width: 396;
+				height: 62;
+				float: left;
+				font-size: 18;
+				color: #1c1e21;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#duoi{
+				width: 396;
+				height: 334;
+				float: left;
+			}
+			#duoi > *{
+				float: left;
+			}
+			#duoi > input{
+				width: 364;
+				height: 52;
+				border: 1px solid #dddfe2;
+				border-radius: 6px;
+				color: #1d2129;
+				font-size: 17;
+				padding: 16;
+				line-height: 14 16;
+				margin: 6 0;
+				margin-left: 16;
+			}
+			::placeholder {
+				color: #90949c;
+				font-weight: 100;
+			}
+			#dangnhap{
+				width: 364;
+				height: 48;
+				background-color: #fb6e2e;
+				color: #fff;
+				font-size: 20;
+				font-weight: 700;
+				border-radius: 6px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 6 0;
+				margin-left: 16;
+				cursor: pointer;
+			}
+			#duoi > a{
+				text-decoration: none;
+				color: #fb6e2e;
+				font-size: 14;
+				font-weight: 500;
+				display: block;
+				margin-top: 16;
+				margin-left: 146.5;
+			}
+			#hoac{
+				width: 380;
+				height: 16;
+				margin-top: 13;
+				margin-left: 8;
+				color: #96999e;
+				font-size: 12;
+				display: flex;
+				align-items: flex-end;
+				justify-content: space-between;
+				gap: 15px;
+				cursor: default;
+			}
+			#hoac div:first-of-type, #hoac div:last-of-type{
+				height: 8px;
+				width: 9999px;
+				border-top: 1px solid #d7dade;
+			}
+			#taotkmoi{
+				width: 174;
+				height: 48;
+				font-size: 17;
+				margin-top: 16;
+				margin-left: 111;
+				background-color: #42b72a;
+				color: white;
+				font-weight: 700;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: system-ui;
+				border-radius: 6px;
+				cursor: pointer;
+			}
+		</style>
+    </head>
+    <body>
+		<div id="header">
+			Souvenir
+		</div>
+		<div id="main">
+			<div>
+				<div id="tren">
+					Đăng nhập Souvenir
+				</div>
+				<div id="duoi">
+					<input type="text" placeholder="Email hoặc số điện thoại" name="" id="username">
+					<input type="text" placeholder="Mật khẩu" name="" id="password">
+					<div id="dangnhap" onclick="checkLogin()">Đăng nhập</div>
+					<a href="">Quên tài khoản?</a>
+					<div id="hoac">
+						<div></div>
+						<div>
+							hoặc
+						</div>
+						<div></div>
+					</div>
+					<div id="taotkmoi" onclick="window.location.href = 'register.html'">
+						Tạo tài khoản mới
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div id="footer">
+			<div id="footer1">
+				<ul>
+					<li>Tích điểm Quà tặng VIP</li>
+					<li>DV tặng quà tận nhà</li>
+					<li>Lịch sử mua hàng</li>
+					<li>Tư vấn về tặng quà</li>
+					<li>
+						Xem thêm
+						<i class="ti-angle-down"></i>
+					</li>
+				</ul>
+				<ul>
+					<li>Giới thiệu cửa hàng</li>
+					<li>Tuyền dụng</li>
+					<li>Gửi góp ý, khiếu nại</li>
+					<li>Tìm cửa hàng (shop)</li>
+					<li>Xem bản online</li>
+				</ul>
+				<ul>
+					<li><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</li>
+					<li>Gọi mua: <span>1800.1061</span> (7:30 - 22:00)</li>
+					<li>Khiếu nại: <span>1800.1063</span> (8:00 - 21:30)</li>
+					<li>Tư vấn: <span>1800.1065</span> (8:00 - 21:00)</li>
+				</ul>
+				<div id="footerimg">
+					<div id="footerxh">
+						<div>
+							<img src="fb.png" width="18">
+							<span>90.3k Fan</span>
+						</div>
+						<div>
+							<img src="yt.png" width="18">
+							<span>90.3k Fan</span>
+						</div>
+						<div>
+							<img src="zl.png" width="18">
+							<span>90.3k Fan</span>
+						</div>
+						
+					</div>
+					<div id="footercn">
+						<img src="ct.png" width="79">
+						<img src="cn.png" width="25">
+						<img src="pr.png" height="35">
+						<img src="sp.png" height="35">
+						<img src="th.png" height="35">
+					</div>
+					<span>Hỗ trợ thanh toán:</span>
+					<div id="footertt">
+						<img src="vi.png">
+						<img src="ma.png">
+						<img src="jc.png">
+						<img src="am.png">
+						<img src="at.png">
+						<img src="mo.png">
+						<img src="za.png">
+						<img src="vn.png">
+						<img src="kr.png">
+						<img src="sm.png">
+						
+						
+					</div>
+
+				</div>
+			</div>
+			<div id="footer2">
+				© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021.<br>Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Xem chính sách sử dụng
+			</div>
+		</div>
+	<script>
+		function checkLogin() {
+			var enteredUsername = document.getElementById("username").value;
+			var enteredPassword = document.getElementById("password").value;
+
+			if (enteredUsername == "" || enteredPassword == "") {
+				alert("Vui lòng nhập đầy đủ thông tin");
+				return;
+			}
+
+			if (enteredUsername == "0858680503" && enteredPassword == "duc") {
+				window.location.href = "administrator.html";
+			}
+
+			else if (localStorage.getItem(enteredUsername) != null) {
+				var storedPassword = localStorage.getItem(enteredUsername);
+
+				if (enteredPassword == storedPassword) {
+					window.location.href = "index.html";
+				} else {
+					alert("Sai mật khẩu. Vui lòng thử lại.");
+				}
+			} else {
+				alert("Tài khoản chưa tồn tại. Vui lòng đăng ký tài khoản mới.");
+			}
+		}
+	</script>
+    </body>
+</html>

@@ -1,0 +1,881 @@
+<html>
+    <head>
+        <title>Website Khoa CNTT</title>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+		<link rel="stylesheet" href="detail.css">
+		<script type="text/javascript" src="jquery-3.6.4.min"></script>
+		<script src="luuniem.js" async></script>
+        
+    </head>
+    <body>
+		<div id="header">
+			<div id="header-top">
+				
+				<a href="#" id="header_logo">
+					<img width="229px" height="41px" src="logo.png"></img>
+				</a>
+				<div id="header_address">
+					<i class="ti-angle-down"></i>
+					<div>
+						<span>
+							Xem giá, tồn kho tại:
+						</span><br>
+						<b>Hải Dương</b>
+					</div>
+					
+				</div>
+				<div style="position: relative">
+					<input type="text" placeholder="Bạn tìm gì..." id="search">
+					<i class="ti-search"></i>
+				</div>
+				<div id="header_history">
+					Lịch sử đơn hàng
+				</div>
+				<div style="display: flex;">
+					<div id="header_cart">
+						<i class="ti-shopping-cart"></i>
+						<div id="cart_text">
+							Giỏ hàng
+						</div>
+						
+
+						</div>
+					</div>
+					<div id="header_other">
+						<div id="tuvan">Tư vấn<br>chọn mua</div>
+						<div id="khuyenmai">Khuyến mãi</div>
+						<div id="hoctap">Học tập</div>
+					</div>
+				</div>
+			</div>
+			<div id="header_main">
+				<div id="tatca">
+					<i class="ti-align-justify"></i> 
+					<div>Tất cả danh mục</div>
+					<ul>
+						<li>
+							<img src="diamond.png">
+							<span>Hàng cao cấp</span>
+						</li>
+						<li>
+							<img src="hot.png">
+							<span>Móc chìa khoá</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-cup"></i>
+							<span>Cốc</span>
+						</li>
+						<li>
+							<img src="hot.png">
+							<span>Mũ nón</span>
+						</li>
+						<li>
+							<img src="hot.png">
+							<span>Mô hình</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-bag"></i>
+							<span>Túi xách</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-image"></i>
+							<span>Khung ảnh, tranh để bàn</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-envelope"></i>
+							<span>Bưu thiếp</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-gift"></i>
+							<span>Giấy gói quà</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-money"></i>
+							<span>Trang sức</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-face-smile"></i>
+							<span>Dây buộc tóc, bờm, băng đô</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-github"></i>
+							<span>Gấu bông, thú bông</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-mobile"></i>
+							<span>Phụ kiện điện thoại</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-bell"></i>
+							<span>Vòng bắt giấc mơ, chuông gió</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-layout-media-center-alt"></i>
+							<span>Tranh treo tường</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-wand"></i>
+							<span>Hoa trang trí</span>
+						</li>
+						
+					</ul>
+					<div id="borderRight"></div>
+				</div>
+				<div id="header_list">
+					<ul>
+						<li>Áo phông</li>
+						<li>Móc chìa khoá</li>
+						<li>Cốc</li>
+						<li>Mũ nón</li>
+						<li>Mô hình</li>
+						<li>Túi xách</li>
+						<li>Khung ảnh</li>
+						<li>Bưu thiếp</li>
+						<li>Giấy gói quà</li>
+						<li>Trang sức</li>
+						<li>Dây buộc tóc</li>
+						<li>Gấu bông</li>
+						<li>Phụ kiện máy</li>
+						
+					</ul>
+				</div>
+
+				
+			
+			</div>
+			
+		
+		</div>
+		<div id="duongdan">
+			<span>Trang chủ</span>
+			<i class="ti-angle-right"></i>
+			<span>Thời trang nữ</span>
+			<i class="ti-angle-right"></i>
+			<span>Áo</span>
+			<i class="ti-angle-right"></i>
+			<span>Áo thun</span>
+			<i class="ti-angle-right"></i>
+			<span>Áo phông thỏ EIn chất cotton su form rộng tay lỡ</span>
+		</div>
+		<div id="chitiet">
+			<div id="chitiet-anh">
+				<img class="shop-item-image1" src="thoxanh.jpeg">
+				<ul>
+					<li><img src="thotrang.jpeg" alt=""></li>
+					<li><img src="thoden.jpeg" alt=""></li>
+					<li><img src="thoxanh.jpeg" alt=""></li>
+				</ul>
+				
+				<div id="chiase">
+					<span>Chia sẻ:</span>
+					<img src="mess.png" alt="">
+					<img src="facebook.png" alt="">
+					<img src="pinterest.png" alt="">
+					<img src="twitter.png" alt="">
+				</div>
+				<div id="dathich">
+					<i class="ti-heart"></i>
+					<span>Đã thích (145)</span>
+				</div>
+			
+			</div>
+			<div id="chitiet-chu">
+				<div id="chitiet-tieude">
+					<span>Yêu Thích</span>
+					<span class="phaidepname1">Áo phông thỏ EIn chất cotton su form rộng tay lỡ</span>
+				</div>
+				<div id="chitiet-danhgia">
+					<div id="danhgia-sao1">
+						<div id="sao-so">
+							4.9
+						</div>
+						<div id="sao-hinh">
+							<i class="ti-star"></i>
+							<i class="ti-star"></i>
+							<i class="ti-star"></i>
+							<i class="ti-star"></i>
+							<i class="ti-star"></i>
+						</div>
+					</div>
+					<div id="danhgia-so">
+						<div id="so-so">
+							102
+						</div>
+						<div id="do-chu">
+							Đánh Giá
+						</div>
+					</div>
+					<div id="danhgia-ban">
+						<span>200</span>
+						<span>Đã Bán</span>
+						<img src="hoi.png" alt="">
+					</div>
+					<div id="danhgia-tocao">Tố cáo</div>
+				</div>
+				<div id="chitiet-gia">
+					<div id="gia-gach">
+						₫58.000
+					</div>
+					<div id="gia-cam">
+						<div id="gia-dam" class="goiyprice1">
+							29.000₫
+						</div>
+						<div id="gia-giam">
+							50% GIẢM
+						</div>
+					</div>
+				</div>
+				<div id="chitiet-baohiem">
+					<div>Bảo Hiểm</div>
+					<div>Bảo hiểm Thời trang</div>
+					<div id="baohiem-moi">Mới</div>
+					<div>Tìm hiểu thêm</div>
+				</div>
+				<div id="chitiet-vanchuyen">
+					<div id="vanchuyen-tieude">
+						Vận chuyển
+					</div>
+					<div id="vanchuyen-phai">
+						<img src="freeship.png" alt="">
+						<div>Miễn phí vận chuyển</div>
+						<div id="ti-truck"><i class="ti-truck"></i></div>
+						<div id="vanchuyen-thongtin">
+							<div id="thongtin-toi">
+								<div>Vận Chuyển Tới</div>
+								<div><span>Phường Tràng Tiền, Quận Hoàn Kiếm </span><i class="ti-angle-down"></i></div>
+							</div>
+							<div id="thongtin-phi">
+								<div>Phí Vận Chuyển</div>
+								<div><span>₫0 </span><i class="ti-angle-down"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="chitiet-mau">
+					<div id="mau-chu">Màu</div>
+					<div id="mau-nut">
+						<div class="mau-nut" value="thoden.jpeg">Đen</div>
+						<div class="mau-nut" value="thotrang.jpeg">Trắng</div>
+						<div class="mau-nut" value="thoxanh.jpeg">Xanh lá</div>
+					</div>
+				</div>
+				<div id="chitiet-so">
+					<div id="so-chu">Số Lượng</div>
+					<div id="so-nut">
+						<input type="button" onclick="sub('txt')" value="-">
+						<input type="text" name="" value="1" id="txt">
+						<input type="button" onclick="plus('txt')" value="+">
+						<div id="so-cosan">109 sản phẩm có sẵn</div>
+					</div>
+				</div>
+				<div id="chitiet-giohang">
+					<div id="giohang-them">
+						<i class="ti-shopping-cart"></i>
+						<span>thêm vào giỏ hàng</span>
+					</div>
+					<div id="giohang-mua">
+						Mua Ngay
+					</div>
+				</div>
+				<div id="chitiet-dambao">
+					<div id="dambao-dam">
+						<img src="dambao.png" alt="">
+						<span>Shop Đảm Bảo</span>
+					</div>
+					<div id="dambao-nhat">
+						3 Ngày Trả Hàng / Hoàn Tiền
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<div id="mota">
+			<div id="mota-chitiet">
+				CHI TIẾT SẢN PHẨM
+			</div>
+			<div id="mota-chitiet-bang">
+				<div class="bang-dong">
+					<div class="dong-nhat">
+						Danh Mục
+					</div>
+					<div class="dong-xanh">
+						<span>Trang chủ</span>
+						<i class="ti-angle-right"></i>
+						<span>Thời Trang Nữ</span>
+						<i class="ti-angle-right"></i>
+						<span>Áo</span>
+						<i class="ti-angle-right"></i>
+						<span>Áo thun</span>
+					</div>
+				</div>
+				<div class="bang-dong">
+					<div class="dong-nhat">
+						Cổ áo
+					</div>
+					<div class="dong-dam">
+						Cổ tròn
+					</div>
+				</div>
+				<div class="bang-dong">
+					<div class="dong-nhat">
+						Chiều dài tay áo
+					</div>
+					<div class="dong-dam">
+						Dài 3/4
+					</div>
+				</div>
+				<div class="bang-dong">
+					<div class="dong-nhat">
+						Chất liệu
+					</div>
+					<div class="dong-dam">
+						Cotton
+					</div>
+				</div>
+				<div class="bang-dong">
+					<div class="dong-nhat">
+						Mẫu
+					</div>
+					<div class="dong-dam">
+						In
+					</div>
+				</div>
+				<div class="bang-dong">
+					<div class="dong-nhat">
+						Cropped Top
+					</div>
+					<div class="dong-dam">
+						Không
+					</div>
+				</div>
+				<div class="bang-dong">
+					<div class="dong-nhat">
+						Kho hàng
+					</div>
+					<div class="dong-dam">
+						109
+					</div>
+				</div>
+				<div class="bang-dong">
+					<div class="dong-nhat">
+						Gửi từ
+					</div>
+					<div class="dong-dam">
+						Hà Nam
+					</div>
+				</div>
+			</div>
+			<div id="mota-mota">
+				MÔ TẢ SẢN PHẨM
+			</div>
+			<div id="mota-chu">
+				<p>CH  STORE ❤️</p>
+				<p></p>
+				<p>Chuyên Sản Xuất Hàng May Sẵn .</p>
+				<p></p>
+				<p> Bán Buôn - Bán Sỉ Số Lượng Lớn Và Nhận Đặt May Theo Yêu Cầu . Inbox Zalo lấy link vào nhóm sỉ nếu có nhu cầu nhập hàng về bán nhé : 0904.553.014</p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>🎁THÔNG TIN SẢN PHẨM : </p>
+				<p></p>
+				<p>🕸️🕸️🕸️🕸️🕸️🕸️</p>
+				<p>.</p>
+				<p></p>
+				<p>Đường may kỹ,chắc chắn, tinh tế, sắc xảo</p>
+				<p></p>
+				<p>Form Từ 40kg đến 65_70kg tùy cơ địa. </p>
+				<p></p>
+				<p>🌀 Màu sắc ( lưu ý ) :</p>
+				<p></p>
+				<p> ● Do ánh sáng góc chụp, màn hình khác nhau, hàng thật có thể khác với hình ảnh. Vui lòng lấy sản phẩm thật làm tiêu chuẩn!</p>
+				<p></p>
+				<p>🌀 Form chuẩn Unisex Nam Nữ Couple đều mặc được.</p>
+				<p></p>
+				<p>🌀 Cam kết: Chất lượng và Mẫu mã Sản phẩm giống với Hình ảnh.</p>
+				<p></p>
+				<p>🔥Lưu ý : </p>
+				<p></p>
+				<p>+ Giao hàng tận nơi. Nhận hàng thanh toán.</p>
+				<p></p>
+				<p>(Nếu Sản phẩm bị lỗi Quý khách vui lòng inbox liên hệ Shop để được hỗ trợ đổi hàng hoặc Trả hàng/Hoàn tiền cho Khách ạ. Rất mong Quý Khách đừng vì lỗi nhỏ mà cho Shop 1 - 2 sao tội nghiệp Shop! Và đồng nghĩa Quý khách sẽ mất đi quyền lợi đổi hàng nha)</p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>HƯỚNG DẪN GIỮ LÂU MÀU HÌNH IN VÀ SẢN PHẨM NHÀ CH STORE</p>
+				<p></p>
+				<p>- Nhận hàng về nếu bạn có giặt thì mình giặt sơ bằng nước lạnh rồi phơi luôn nhé.</p>
+				<p></p>
+				<p>- Hoặc giặt sau 3 ngày nhận áo ( để hình in được dính chặt hơn trên sợi vải) ---> giữ hình in đẹp hơn.</p>
+				<p></p>
+				<p>- Các bạn tuyệt đối không ngâm áo với chất tẩy.</p>
+				<p></p>
+				<p>- Hạn chế giặt máy nhiều nha ít nhất trong 2 tuần đầu nè.</p>
+				<p></p>
+				<p>- Các bạn cũng đừng ngâm áo hoặc quần quá lâu trong nước giặt và nước xả nha.</p>
+				<p></p>
+				<p>- À, QUAN TRỌNG HƠN LÀ NHỚ LỘN QUẦN TRƯỚC KHI PHƠI NÈ.</p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>- Hỗ trợ đổi trả qua Shop.</p>
+				<p></p>
+				<p>- Hàng có sẵn, nhận đơn thì donna đi hàng nhé.</p>
+				<p></p>
+				<p>- Hoàn tiền 100% nếu sản phẩm không giống mô tả.</p>
+				<p></p>
+				<p>- Hỗ trợ đổi sản phẩm miễn phí nếu sản phẩm bị lỗi do nhà sản xuất.</p>
+				<p></p>
+				<p>-------------------------------</p>
+				<p></p>
+				<p>* CH STORE CAM KẾT: </p>
+				<p></p>
+				<p>- Sản phẩm 100% giống mô tả</p>
+				<p></p>
+				<p>- Tư vấn nhiệt tình, chu đáo luôn lắng nghe khách hàng để phục vụ tốt. </p>
+				<p></p>
+				<p>- Giao hàng nhanh đúng tiến độ không phải để quý khách chờ đợi lâu để nhận hàng. </p>
+				<p></p>
+				<p>-------------------------------</p>
+				<p></p>
+				<p>* Đổi trả theo đúng quy định của Shop</p>
+				<p></p>
+				<p>1. Điều kiện áp dụng (trong vòng 03 ngày kể từ khi nhận sản phẩm): </p>
+				<p></p>
+				<p>- Có video khi bóc hàng , kiểm hàng </p>
+				<p></p>
+				<p>- Hàng hoá vẫn còn mới, chưa qua sử dụng </p>
+				<p></p>
+				<p>- Hàng hóa hư hỏng do vận chuyển hoặc do nhà sản xuất. </p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>2. Trường hợp được chấp nhận: </p>
+				<p></p>
+				<p>- Hàng không đúng size, kiểu dáng như quý khách đặt hàng </p>
+				<p></p>
+				<p>- Không đủ số lượng, không đủ bộ như trong đơn hàng</p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>3. Trường hợp không đủ điều kiện áp dụng chính sách:</p>
+				<p></p>
+				<p>- Quá 03 ngày kể từ khi Quý khách nhận hàng </p>
+				<p></p>
+				<p>- Gửi lại hàng không đúng mẫu mã</p>
+				<p></p>
+				<p>- Đặt nhầm sản phẩm, chủng loại, không thích, không hợp,...</p>
+				<p></p>
+				<p> Ấn theo dõi để ủng hộ shop và tham khảo các sản phẩm mới của shop, CH Store rất hân hạnh được phục vụ quý khách</p>
+				<p></p>
+				<p>------------------------------------------</p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p>#aoxevat #aotronxeta #aophongtron #aophoitay #aobongchay #aothethao</p>
+				<p></p>
+				<p>#aothun #aounisex #aotaylo #aoformrong #aophong #aohe #aomacnha #aobosua #aoloang #aoessentials #aoformto #taylo #aooversize #aonhom #aolop #aocotton #aoloai1</p>
+				<p></p>
+				<p>Chốt đơn số lượng lớn zalo: 0904.553.014</p>
+				<p></p>
+				<p>NHẬN ĐẶT MAY THEO YÊU CẦU.</p>
+			</div>
+			
+		</div> 
+		<div id="mota-danhgia">
+			<div id="danhgia-tieude">
+				ĐÁNH GIÁ SẢN PHẨM
+			</div>
+			<div id="danhgia-sao">
+				<div id="sao-cam">
+					<div id="cam-tren">
+						<div>4.9</div>
+						<div>trên 5</div>
+					</div>
+					<div id="cam-duoi">
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+					</div>
+					
+				</div>
+				<div id="sao-nut">
+					<div>Tất Cả</div>
+					<div>5 Sao (50)</div>
+					<div>4 Sao (17)</div>
+					<div>3 Sao (7)</div>
+					<div>2 Sao (2)</div>
+					<div>1 Sao (3)</div>
+					<div>Có Bình luận (58)</div>
+					<div>Có hình ảnh / video (43)</div>
+				</div>
+			</div>
+			<div id="danhgia-nguoi">
+				<div id="nguoi-anh">
+					<img src="comment.jpeg" alt="">
+				</div>
+				<div id="nguoi-chu">
+					<div>pd4mhennoz</div>
+					<div id="nguoi-sao">
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+					</div>
+					<div id="nguoi-ngay">
+						2023-04-06 12:36 | Phân loại hàng: Đen
+					</div>
+					<div id="nguoi-noi">
+						Áo đẹp nha mn mna hơi mỏng nhưng với giá tiền này là hợp lí đáng mua nha
+					</div>
+					<img src="commentc.jpeg" alt="">
+					<img src="commentc1.jpeg" alt="">
+					<div id="danhgia-thich">
+						<div id="thich-icon">
+							<i class="ti-thumb-up"></i>
+							<div>6</div>
+						</div>
+						<div id="thich-bacham">
+							<i class="ti-more-alt"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="danhgia-nguoi1">
+				<div id="nguoi-anh">
+					<img src="comment1.jpeg" alt="">
+				</div>
+				<div id="nguoi-chu">
+					<div>minhtotheminhanh</div>
+					<div id="nguoi-sao">
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+					</div>
+					<div id="nguoi-ngay">
+						2022-11-04 14:00 | Phân loại hàng: Màu xanh lá,2XL
+					</div>
+					<div class="nguoi-muc nguoi-muc1">
+						<span>Chất liệu:</span> ok
+					</div>
+					<div class="nguoi-muc">
+						<span>Màu sắc:</span> ok
+					</div>
+					<div class="nguoi-muc">
+						<span>Đúng với mô tả:</span> Dep
+					</div>
+					<div id="nguoi-noi">
+						Áo chất liệu ok nha mng. Form cũng okla lắm…………………….
+					</div>
+					<img src="commentc2.jpeg" alt="">
+					<img src="commentc3.jpeg" alt="">
+					<img src="commentc4.jpeg" alt="">
+					<img src="commentc5.jpeg" alt="">
+					<img src="commentc6.jpeg" alt="">
+					<img src="commentc7.jpeg" alt="">
+					<div id="nguoi-phanhoi">
+						<div id="phanhoi-tieude">
+							Phản Hồi Của Người Bán
+						</div>
+						<div id="phanhoi-noidung">
+							Bạn thân mến, tôi thấy rằng bạn đã xếp hạng năm sao cho tôi, bạn có thể vui lòng thêm video và 5 ảnh vào xếp hạng này không? Nếu không có ảnh quần áo, bạn có thể thêm ảnh đời thường của mình, điều này sẽ rất hữu ích với tôi và sẽ cho nhiều người xem sản phẩm hơn, đó là lời khẳng định lớn nhất cho công việc của tôi. 😄Mình sẽ xin phiếu review tốt cho bạn. Cảm ơn bạn, người bạn tốt bụng.
+						</div>
+					</div>
+					
+					<div id="danhgia-thich1">
+						<div id="thich-icon">
+							<i class="ti-thumb-up"></i>
+							<div style="font-size: 14px;">Hữu Ích?</div>
+						</div>
+						<div id="thich-bacham">
+							<i class="ti-more-alt"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="danhgia-nguoi2">
+				<div id="nguoi-anh">
+					<img src="comment2.jpeg" alt="">
+				</div>
+				<div id="nguoi-chu">
+					<div>thienky1501</div>
+					<div id="nguoi-sao">
+						<i class="ti-star"></i>
+						<i class="ti-star"></i>
+					</div>
+					<div id="nguoi-ngay">
+						2023-02-27 13:23 | Phân loại hàng: Trắng,2XL
+					</div>
+					<div class="nguoi-muc nguoi-muc1">
+						<span>Chất liệu:</span> chất liệu len
+					</div>
+					<div class="nguoi-muc">
+						<span>Màu sắc:</span> màu trắng
+					</div>
+					<div class="nguoi-muc">
+						<span>Đúng với mô tả:</span> không đúng với mô tả
+					</div>
+					<div id="nguoi-noi">
+						Áo thì mỏng loét chê ạ
+					</div>
+					<img src="commentc8.jpeg" alt="">
+					<img src="commentc9.jpeg" alt="">
+					<div id="danhgia-thich">
+						<div id="thich-icon">
+							<i class="ti-thumb-up"></i>
+							<div style="font-size: 14px;">Hữu Ích?</div>
+						</div>
+						<div id="thich-bacham">
+							<i class="ti-more-alt"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="danhgia-chon">
+				<div><i class="ti-angle-right"></i></div>
+				<div>4</div>
+				<div>3</div>
+				<div>2</div>
+				<div>1</div>
+				<div><i class="ti-angle-left"></i></div>
+			</div>
+			
+
+		</div>
+		<span>CÁC SẢN PHẨM KHÁC CỦA SHOP</span>
+		<div id="goiysp">
+			
+			
+			<div class="goiysp">
+				
+				<div class="phaidepimg" style="margin-top: 56;">
+					<img class="shop-item-image" src="hoa1.jpeg">
+
+				</div>
+				
+				<div class="phaidepname" style="margin-top: 20;">
+					Hoa giả tulip cao cấp Decor trang trí lọ để bàn 
+				</div>
+				<div class="goiyprice">
+					20.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				<span class="phaidepsub">-50%</span>
+				<div class="phaidepstar">
+					<b>4.8</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(20)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			<div class="goiysp">
+				<div class="limited" style="width: 55;">
+					Yêu thích
+				</div>
+				<div class="phaidepimg">
+					<img class="shop-item-image" src="tai.jpeg">
+
+				</div>
+				<div class="phaideppercent1">
+					<img style="width: 20;" src="percent1.png">
+					<span style="position: absolute; top: 5; right: 7;">GIẢM SỐC</span>
+					
+				</div>
+				<div class="phaidepname">
+					Tai Nghe Mèo Bluetooth Tai Mèo Dễ Thương Có Mic
+				</div>
+				<div class="goiyprice">
+					20.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				<span class="phaidepsub">-40%</span>
+				<span class="goiygift">
+					Miễn phí vận chuyển
+				</span>
+				<div class="phaidepstar">
+					<b>4.7</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(34)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			<div class="goiysp">
+				
+				<div class="phaidepimg" style="margin-top: 56;">
+					<img class="shop-item-image" src="vi.jpeg">
+
+				</div>
+				<div class="phaidepname" style="margin-top: 20;">
+					Ví Đựng Tiền Xu Hình Chim Cánh Cụt Hoạt Hình Đáng Yêu
+				</div>
+				<span class="goiygift">
+					Mua 2 tặng 1
+				</span>
+				<div class="goiyprice">
+					17.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				
+				<div class="phaidepstar">
+					<b>4.9</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(19)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			
+			<div class="goiysp">
+				
+				<div class="phaidepimg" style="margin-top: 56;">
+					<img class="shop-item-image" src="kinh.jpeg">
+
+				</div>
+				
+				<div class="phaidepname" style="margin-top: 20;">
+					Kính Mát Gọng Vuông Lớn Phong Cách Hàn Quốc
+				</div>
+				<div class="goiyprice">
+					14.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				
+				<div class="phaidepstar">
+					<b>4.6</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(47)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			<div class="goiysp">
+				<div class="limited">
+					Yêu thích
+				</div>
+				<div class="phaidepimg">
+					<img class="shop-item-image" src="loa1.jpeg">
+
+				</div>
+				<div class="phaideppercent2">
+					<img style="width: 20;" src="percent2.png">
+					<span style="position: absolute; top: 5; right: 9;">GIÁ RẺ QUÁ</span>
+					
+				</div>
+				<div class="phaidepname">
+					Loa thông minh phát nhạc và điều khiển bằng giọng nói
+				</div>
+				<span class="goiygift">
+					Chỉ bán online
+				</span>
+				<div class="goiyprice">
+					620.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				
+				<div class="phaidepstar">
+					<b>5</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(8)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+
+		</div>
+		<div id="footer">
+			<div id="footer1">
+				<ul>
+					<li>Tích điểm Quà tặng VIP</li>
+					<li>DV tặng quà tận nhà</li>
+					<li>Lịch sử mua hàng</li>
+					<li>Tư vấn về tặng quà</li>
+					<li>
+						Xem thêm
+						<i class="ti-angle-down"></i>
+					</li>
+				</ul>
+				<ul>
+					<li>Giới thiệu cửa hàng</li>
+					<li>Tuyền dụng</li>
+					<li>Gửi góp ý, khiếu nại</li>
+					<li>Tìm cửa hàng (shop)</li>
+					<li>Xem bản online</li>
+				</ul>
+				<ul>
+					<li><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</li>
+					<li>Gọi mua: <span>1800.1061</span> (7:30 - 22:00)</li>
+					<li>Khiếu nại: <span>1800.1063</span> (8:00 - 21:30)</li>
+					<li>Tư vấn: <span>1800.1065</span> (8:00 - 21:00)</li>
+				</ul>
+				<div id="footerimg">
+					<div id="footerxh">
+						<div>
+							<img src="fb.png" width="18">
+							<span>90.3k Fan</span>
+						</div>
+						<div>
+							<img src="yt.png" width="18">
+							<span>90.3k Fan</span>
+						</div>
+						<div>
+							<img src="zl.png" width="18">
+							<span>90.3k Fan</span>
+						</div>
+						
+					</div>
+					<div id="footercn">
+						<img src="ct.png" width="79">
+						<img src="cn.png" width="25">
+						<img src="pr.png" height="35">
+						<img src="sp.png" height="35">
+						<img src="th.png" height="35">
+					</div>
+					<span>Hỗ trợ thanh toán:</span>
+					<div id="footertt">
+						<img src="vi.png">
+						<img src="ma.png">
+						<img src="jc.png">
+						<img src="am.png">
+						<img src="at.png">
+						<img src="mo.png">
+						<img src="za.png">
+						<img src="vn.png">
+						<img src="kr.png">
+						<img src="sm.png">
+						
+						
+					</div>
+
+				</div>
+			</div>
+			<div id="footer2">
+				© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021.<br>Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Xem chính sách sử dụng
+			</div>
+		</div>
+		<div id="cart">
+			<h2>Giỏ hàng</h2>
+			<div id="cart-row">
+				<span style="width: 40%;">Mặt hàng</span>
+				<span>Giá</span>
+				<span>Số lượng</span>
+			</div>
+			<div class="cart-items">
+				
+			</div>
+			<div class="cart-total">
+				<b>Tổng</b>
+				<span class="cart-total-price"></span>
+			</div>
+			<button class="btn-purchase"><b>THANH TOÁN</b></button>
+
+		</div>
+	<script>
+		 
+	</script>
+    </body>
+</html>

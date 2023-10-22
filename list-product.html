@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>list-product.html</title>
+	<link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+	<style>
+	*{
+		box-sizing: border-box;
+	}
+	html{
+		font-family: helvetica;
+	}
+	#main{
+		width: 1140px;
+		margin: 0px auto;
+	}
+	
+	
+	#left{
+		width: 20%;
+		float: left;		
+	}
+	#ds{
+		
+	}
+	#ds > li{
+		display: block;
+		background-color: #3C80B5;
+		border: 1px solid #2F6695;
+		
+		
+	}
+	#ds > li >a, .dscon > li >a{
+		color: #fff;
+		padding-left: 10px;
+		display: block;
+		padding: 10px;
+
+	}
+	
+	.dscon{
+		padding-left: 0px;
+	}
+	.dscon > li {
+		display: block;
+		background-color: #4A5059;
+		border: 1px solid #424650;
+	}
+	.tenxuong{
+		float: right;
+		margin-left: 10px;
+	}
+	#right{
+		float: right;
+		width: 75%;
+		
+		margin-right: 25px;
+		margin-top: 15px;
+		
+	}
+	#right span{
+		color: #2F6DC4;
+		font-size: 29px;
+		font-weight: bold;
+	}
+	#right input[type=button]{
+		text-transform: uppercase;
+		background: #2F6DC4;
+		border: 0;
+		color: #fff;
+		padding: 10px 5px;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	input[type=button]:first-of-type{
+		margin: 0px;
+	}
+	input[type=button]:last-of-type{
+		margin-left: 10px;
+	}
+	
+	table{
+		margin-top: 10px;
+	}
+	#tr1{
+		background: #2F6DC4;
+		color: #fff;
+		font-size: 97%;
+	}
+	.trxam{
+		background: #EEEEEE;
+	}
+	td:first-child, td:nth-child(7), td:nth-child(8), td:nth-child(9), td:last-child{
+		text-align: center;
+	}
+	td,th {
+		padding: 10px 4px;
+	}
+	th{
+		border-right:  1px solid #fff;
+	}
+	#right ul{
+		text-align: center;
+	}
+	#right li{
+		display: inline;
+		margin: 0px 5px;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+		
+		<div id="bottom">
+			<div id="left">
+				<ul id="ds">
+					<li><a>Trang chủ</a></li>
+					<li><a>Bán hàng <i class="tenxuong ti-angle-down"></i></a>
+						
+						<ul class="dscon">
+							<li><a>Hoá đơn bán</a></li>
+							<li><a>Khách hàng</a></li>
+						</ul>
+					</li>
+					<li><a>Nhập hàng <i class="tenxuong ti-angle-down"></i></a>
+						<ul class="dscon">
+							<li><a>Hóa đơn nhập</a></li>
+							<li><a>Hãng sản xuất</a></li>
+							<li><a>Nhà cung cấp</a></li>
+						</ul>
+					</li>
+					<li><a>Danh mục <i class="tenxuong ti-angle-down"></i></a>
+						<ul class="dscon">
+							<li><a>Sản phẩm</a></li>
+							<li><a>Chuyên mục</a></li>
+							<li><a>Slide show</a></li>
+							<li><a>Quảng cáo</a></li>
+							
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+			<div id="right">
+				<span><i class="ti-arrow-circle-right"></i> Quản lý sản phẩm</span><br><br><br>
+				<input type="button" value="thêm mới"></input>
+				<input type="button" value="xoá nhiều"></input>
+				<table cellspacing="0" >
+					<tr id="tr1">
+						<th>STT</th>
+						<th><input type="checkbox"></input></th>
+						<th>Mã sản phẩm</th>
+						<th>Mã seri</th>
+						<th>Tên sản phẩm</th>
+						<th>Tên chuyên mục</th>
+						<th>Ngày đăng</th>
+						<th>Xem</th>
+						<th>Sửa</th>
+						<th>Xoá</th>
+					</tr>
+					<tr class="trxam">
+						<td>91</td>
+						<td><input type="checkbox"></input></td>
+						<td>3503</td>
+						<td>HDW-H145A</td>
+						<td>Apple Watch SE 2022 40mm viền nhôm dây silicone</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+					<tr>
+						<td>92</td>
+						<td><input type="checkbox"></input></td>
+						<td>3502</td>
+						<td>FSBW-64415</td>
+						<td>Áo phông thỏ EIn chất cotton su form rộng tay lỡ</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+					<tr class="trxam">
+						<td>93</td>
+						<td><input type="checkbox"></input></td>
+						<td>3501</td>
+						<td>FS-402F</td>
+						<td>Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+					<tr>
+						<td>94</td>
+						<td><input type="checkbox"></input></td>
+						<td>3500</td>
+						<td>FS-401F</td>
+						<td>Apple AirPods with Charging Case 1st gen</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+					<tr class="trxam">
+						<td>95</td>
+						<td><input type="checkbox"></input></td>
+						<td>3499</td>
+						<td>SKS62E22EU</td>
+						<td>Nón tai bèo thêu PromissYou chất nhung tăm cao cấp</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+					<tr>
+						<td>96</td>
+						<td><input type="checkbox"></input></td>
+						<td>3498</td>
+						<td>SKE52M65EU</td>
+						<td>Thú bông vịt mệt mỏi lười biếng đáng yêu êm ái vàng trắng</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+					<tr class="trxam">
+						<td>97</td>
+						<td><input type="checkbox"></input></td>
+						<td>3497</td>
+						<td>SMS51E32EU</td>
+						<td>Loa karaoke Kèm Micro Bluetooth YS-210 có 2 micro</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+					<tr>
+						<td>98</td>
+						<td><input type="checkbox"></input></td>
+						<td>3496</td>
+						<td>SMS63L02EA</td>
+						<td>Nón bucket thêu mặt cười - mũ tai bèo đẹp hot</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+					<tr class="trxam">
+						<td>99</td>
+						<td><input type="checkbox"></input></td>
+						<td>3495</td>
+						<td>SMS68T102E</td>
+						<td>Hộp đựng khăn giấy, kệ để điện thoại 2in1 hộp đựng khăn giấy</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><input type="checkbox"></input></td>
+						<td>3494</td>
+						<td>SMU68TS02E</td>
+						<td>Tai Nghe Mèo Bluetooth Tai Mèo Dễ Thương Có Mic</td>
+						<td>Đồ lưu niệm</td>
+						<td>09/03/2020</td>
+						<td><i class="ti-search"></i></td>
+						<td><i class="ti-file"></i></td>
+						<td><i class="ti-trash"></i></td>
+					</tr>
+				</table>
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>...</li>
+				</ul>
+				
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,888 @@
+<html>
+    <head>
+        <title>Website Khoa CNTT</title>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="jquery-3.6.4.min"></script>
+		<script src="luuniem.js" async></script>
+        
+    </head>
+    <body>
+		<div id="header">
+			<div id="header-top">
+				
+				<a href="#" id="header_logo">
+					<img width="229px" height="41px" src="logo.png"></img>
+				</a>
+				<div id="header_address">
+					<i class="ti-angle-down"></i>
+					<div>
+						<span>
+							Xem giá, tồn kho tại:
+						</span><br>
+						<b>Hải Dương</b>
+					</div>
+					
+				</div>
+				<div style="position: relative">
+					<input type="text" placeholder="Bạn tìm gì..." id="search">
+					<i class="ti-search"></i>
+				</div>
+				<div id="header_history">
+					Lịch sử đơn hàng
+				</div>
+				<div style="display: flex;">
+					<div id="header_cart">
+						<i class="ti-shopping-cart"></i>
+						<div id="cart_text">
+							Giỏ hàng
+						</div>
+						
+
+						</div>
+					</div>
+					<div id="header_other">
+						<div id="tuvan">Tư vấn<br>chọn mua</div>
+						<div id="khuyenmai">Khuyến mãi</div>
+						<div id="hoctap">Học tập</div>
+					</div>
+				</div>
+			</div>
+			<div id="header_main">
+				<div id="tatca">
+					<i class="ti-align-justify"></i> 
+					<div>Tất cả danh mục</div>
+					<ul>
+						<li>
+							<img src="diamond.png">
+							<span>Hàng cao cấp</span>
+						</li>
+						<li>
+							<img src="hot.png">
+							<span>Móc chìa khoá</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-cup"></i>
+							<span>Cốc</span>
+						</li>
+						<li>
+							<img src="hot.png">
+							<span>Mũ nón</span>
+						</li>
+						<li>
+							<img src="hot.png">
+							<span>Mô hình</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-bag"></i>
+							<span>Túi xách</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-image"></i>
+							<span>Khung ảnh, tranh để bàn</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-envelope"></i>
+							<span>Bưu thiếp</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-gift"></i>
+							<span>Giấy gói quà</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-money"></i>
+							<span>Trang sức</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-face-smile"></i>
+							<span>Dây buộc tóc, bờm, băng đô</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-github"></i>
+							<span>Gấu bông, thú bông</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-mobile"></i>
+							<span>Phụ kiện điện thoại</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-bell"></i>
+							<span>Vòng bắt giấc mơ, chuông gió</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-layout-media-center-alt"></i>
+							<span>Tranh treo tường</span>
+						</li>
+						<li>
+							<i style="font-size: 18px; margin-left: 10; margin-right: 6;" class="ti-wand"></i>
+							<span>Hoa trang trí</span>
+						</li>
+						
+					</ul>
+					<div id="borderRight"></div>
+				</div>
+				<div id="header_list">
+					<ul>
+						<li>Áo phông</li>
+						<li>Móc chìa khoá</li>
+						<li>Cốc</li>
+						<li>Mũ nón</li>
+						<li>Mô hình</li>
+						<li>Túi xách</li>
+						<li>Khung ảnh</li>
+						<li>Bưu thiếp</li>
+						<li>Giấy gói quà</li>
+						<li>Trang sức</li>
+						<li>Dây buộc tóc</li>
+						<li>Gấu bông</li>
+						<li>Phụ kiện máy</li>
+						
+					</ul>
+				</div>
+
+				
+			
+			</div>
+			
+		
+		</div>
+		<div id="main">
+			<div id="slide-show">
+				<img id="slide" src="1.jpeg">
+				<div id="back">
+					<i class="ti-angle-left" onclick="back()" style="line-height: 3; font-weight: bolder;"></i>
+				</div>
+				<div id="next">
+					<i class="ti-angle-right" onclick="next()" style="line-height: 3; font-weight: bolder;"></i>
+				</div>
+				
+				
+			</div>
+			<div id="phaidep">
+				<div id="phaidepheader">
+					mặt hàng nổi bật
+				</div>
+				<div id="phaidepsp">
+					<div class="phaidepsp">
+						<div class="limited">
+							Yêu thích
+						</div>
+						<div class="phaidepimg">
+							<img class="shop-item-image" src="apple.jpeg">
+
+						</div>
+						<div class="phaideppercent">
+							<img style="width: 20;" src="percent.png">
+							<span style="position: absolute; top: 5; right: 7;">GIÁ RẺ QUÁ</span>
+							
+						</div>
+						<div class="phaidepname">
+							Apple Watch SE 2022 40mm viền nhôm dây silicone
+						</div>
+						<div class="goiyprice">
+							1.090.000<span style="font-size: smaller">₫</span>
+							
+						</div>
+						<span class="phaidepsub">-26%</span>
+						<div class="goiygift">
+							Giảm thêm 100.000đ và Quà 300.000đ
+						</div>
+						<div class="phaidepstar">
+							<b>4.1</b>
+							<i class="ti-star"></i>
+							<span class="starnumber">(45)</span>
+						</div>
+						<i class="ti-shopping-cart shop-item-button"></i>
+					</div>
+					<div class="phaidepsp">
+						
+						<div class="phaidepimg" style="margin-top: 56;" onclick="window.location.href = 'detail.html'">
+							<img class="shop-item-image" src="ao1.jpeg" onclick="window.location.href = 'detail.html'">
+
+						</div>
+						
+						<div class="phaidepname" style="margin-top: 20;">
+							Áo phông thỏ EIn chất cotton su form rộng tay lỡ
+						</div>
+						<div class="goiyprice">
+							89.000<span style="font-size: smaller">₫</span>
+							
+						</div>
+						<span class="phaidepsub">-10%</span>
+						<div class="phaidepstar">
+							<b>4.5</b>
+							<i class="ti-star"></i>
+							<span class="starnumber">(100)</span>
+						</div>
+						<i class="ti-shopping-cart shop-item-button"></i>
+					</div>
+					<div class="phaidepsp">
+						
+						<div class="phaidepimg" style="margin-top: 56;">
+							<img class="shop-item-image" src="phan.png">
+
+						</div>
+						
+						<div class="phaidepname" style="margin-top: 20;">
+							Bảng Phấn Mắt Màu Lì Và Màu Nhũ Kim Tuyến Trang Điểm 
+						</div>
+						<div class="goiyprice">
+							165.000<span style="font-size: smaller">₫</span>
+							
+						</div>
+						<span class="phaidepsub">-15%</span>
+						<div class="phaidepstar">
+							<b>4.7</b>
+							<i class="ti-star"></i>
+							<span class="starnumber">(79)</span>
+						</div>
+						<i class="ti-shopping-cart shop-item-button"></i>
+					</div>
+					<div class="phaidepsp">
+						<div class="limited">
+							Yêu thích
+						</div>
+						<div class="phaidepimg">
+							<img class="shop-item-image" src="airpod.jpeg">
+
+						</div>
+						<div class="phaideppercent1">
+							<img style="width: 20;" src="percent1.png">
+							<span style="position: absolute; top: 5; right: 7;">GIẢM SỐC</span>
+							
+						</div>
+						<div class="phaidepname">
+							Apple AirPods with Charging Case 1st gen
+						</div>
+						<div class="goiyprice">
+							990.000<span style="font-size: smaller">₫</span>
+							
+						</div>
+						<span class="phaidepsub">-20%</span>
+						<div class="goiygift">
+							Giảm thêm 100.000đ và Quà 200.000đ
+						</div>
+						<div class="phaidepstar">
+							<b>4.4</b>
+							<i class="ti-star"></i>
+							<span class="starnumber">(50)</span>
+						</div>
+						<i class="ti-shopping-cart shop-item-button"></i>
+					</div>
+					<div class="phaidepsp">
+						
+						<div class="phaidepimg" style="margin-top: 56;">
+							<img class="shop-item-image" src="mu.jpeg">
+
+						</div>
+						
+						<div class="phaidepname" style="margin-top: 20;">
+							Nón tai bèo thêu PromissYou chất nhung tăm cao cấp 
+						</div>
+						<div class="goiyprice">
+							75.000<span style="font-size: smaller">₫</span>
+							
+						</div>
+						<span class="phaidepsub">-10%</span>
+						<div class="phaidepstar">
+							<b>4.9</b>
+							<i class="ti-star"></i>
+							<span class="starnumber">(90)</span>
+						</div>
+						<i class="ti-shopping-cart shop-item-button"></i>
+					</div>
+
+				</div>
+			</div>
+			<div id="danhmuc">
+				<div id="danhmucheader">
+					DANH MỤC NỔI BẬT
+					<span>XEM TẤT CẢ   <i class="ti-angle-right"></i></span>
+				</div>
+				<div id="danhmucmain">
+					<table cellspacing="0" cellpadding="0" style="margin-left: 40;">
+						<tr>
+							<td>
+								<div>
+									<img src="shirt.jpeg">
+									<span>Áo phông</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="key.jpeg">
+									<span>Móc chìa khoá</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="cup.jpeg">
+									<span>Cốc</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="mu.jpeg">
+									<span>Mũ nón</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="mohinh.jpeg">
+									<span>Mô hình</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="tui.jpeg">
+									<span>Túi xách</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="khung.jpeg">
+									<span>Khung ảnh</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="buu.jpeg">
+									<span>Bưu thiếp</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="giay.jpeg">
+									<span>Giấy gói quà</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="nhan.jpeg">
+									<span>Trang sức</span>
+								</div>
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+								<div>
+									<img src="day.jpeg">
+									<span>Dây buộc tóc</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="gau.jpeg">
+									<span>Gấu bông</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="phu.jpeg">
+									<span>Phụ kiện điện thoại</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="chuong.jpeg">
+									<span>Chuông gió</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="tranh.jpeg">
+									<span>Tranh treo tường</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="hoa.jpeg">
+									<span>Hoa trang trí</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="chan.jpeg">
+									<span>Chặn giấy</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="bang.jpeg">
+									<span>Bảng treo cửa</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="tien.jpeg">
+									<span>Tiền cổ</span>
+								</div>
+							</td>
+							<td>
+								<div>
+									<img src="dong.jpeg">
+									<span>Đồng hồ</span>
+								</div>
+							</td>
+							
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="xuhuong">
+				<div id="xuhuongheader">
+					XU HƯỚNG MUA SẮM
+				</div>
+				<div id="xuhuongmain">
+					<div class="xuhuongmain">
+						<img src="ao1.png">
+						<span>Áo phông giá tốt</span>
+						<span>Giá từ 150.000đ</span>
+						<div><i class="ti-angle-right"></i></div>
+					</div>
+					<div class="xuhuongmain">
+						<img src="hoa.png" style="height: 123;top: 10;">
+						<span>Hoa giả bền đẹp</span>
+						<span>Giá từ 200.000đ</span>
+						<div><i class="ti-angle-right"></i></div>
+					</div>
+					<div class="xuhuongmain">
+						<img src="dong.png" style="height: 123;top: 10;">
+						<span>Đồng hồ để bàn</span>
+						<span>Giá từ 100.000đ</span>
+						<div><i class="ti-angle-right"></i></div>
+					</div>
+					<div class="xuhuongmain">
+						<img src="gau.png" style="height: 123;top: 10;">
+						<span>Gấu bông đẹp</span>
+						<span>Giá từ 90.000đ</span>
+						<div><i class="ti-angle-right"></i></div>
+					</div>
+					
+				</div>
+			</div>
+			<div id="dichvuheader">
+				DỊCH VỤ TIỆN ÍCH
+				<span>XEM THÊM DỊCH VỤ   <i class="ti-angle-right"></i></span>
+			</div>
+			<div id="dichvumain">
+				<div class="dichvumain" style="background-color: #dceeff;">
+					<img src="aoo.png" alt="">
+					<div>
+						<p>In ảnh lên áo</p>
+						<p>Tạo nên phong cách riêng biệt, độc đáo</p>
+					</div>
+				</div>
+				<div class="dichvumain" style="background-color: #fef5cf;">
+					<img src="tr.png" style="border-radius: 19px;">
+					<div>
+						<p>Đóng khung tranh</p>
+						<p>Mọi kích thước lấy ngay trong ngày</p>
+					</div>
+				</div>
+				<div class="dichvumain">
+					<img src="gi.png" alt="">
+					<div>
+						<p>Tặng quà tận nhà</p>
+						<p>Miễn phí vận chuyển bán kính 3km</p>
+					</div>
+				</div>
+				<div class="dichvumain" style="background-color: #e1fecf;">
+					<img src="ti.png" alt="">
+					<div>
+						<p>Thứ tư vui vẻ</p>
+						<p><b style="color: #ff0b0b;">Giảm 2%</b> cho mệnh giá từ 100.000 trở lên</p>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+		<span>GỢI Ý HÔM NAY</span>
+		<div id="goiymuc">
+			<div class="goiymuc" style="background-color: #f3b70b; color: #222;">
+				<img src="ch.png" alt="">
+				<span>Cho bạn</span>
+			</div>
+			<div class="goiymuc">
+				<img src="nb.png" alt="">
+				<span>Sản phẩm nổi bật</span>
+			</div>
+			<div class="goiymuc">
+				<img src="ga.png" alt="">
+				<span>Gấu bông chỉ từ 90.000đ</span>
+			</div>
+			<div class="goiymuc">
+				<img src="giam.png" alt="">
+				<span>Xả kho giảm sốc</span>
+			</div>
+			
+		</div>
+		<div id="goiysp">
+			<div class="goiysp">
+				<div class="limited">
+					Yêu thích
+				</div>
+				<div class="phaidepimg">
+					<img class="shop-item-image" src="do.avif">
+
+				</div>
+				<div class="phaideppercent">
+					<img style="width: 20;" src="percent.png">
+					<span style="position: absolute; top: 5; right: 7;">GIÁ RẺ QUÁ</span>
+					
+				</div>
+				<div class="phaidepname">
+					Đồng hồ nam dây da chính hãng Casio MTP-M300L-7AVDF
+				</div>
+				<span class="goiygift">
+					Chỉ bán online
+				</span>
+				<div class="goiyprice">
+					1.190.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				<span class="phaidepsub">-23%</span>
+				<div class="phaidepstar">
+					<b>4.5</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(38)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			<div class="goiysp">
+				
+				<div class="phaidepimg" style="margin-top: 56;">
+					<img class="shop-item-image" src="vit.jpeg">
+
+				</div>
+				
+				<div class="phaidepname" style="margin-top: 20;">
+					Thú bông vịt mệt mỏi lười biếng đáng yêu êm ái vàng trắng
+				</div>
+				<div class="goiyprice">
+					109.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				
+				<div class="phaidepstar">
+					<b>3.8</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(16)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			<div class="goiysp">
+				<div class="limited">
+					Yêu thích
+				</div>
+				<div class="phaidepimg">
+					<img class="shop-item-image" src="loa.jpeg">
+
+				</div>
+				<div class="phaideppercent1">
+					<img style="width: 20;" src="percent1.png">
+					<span style="position: absolute; top: 5; right: 7;">GIẢM SỐC</span>
+					
+				</div>
+				<div class="phaidepname">
+					Loa karaoke Kèm Micro Bluetooth YS-210 có 2 micro
+				</div>
+				<div class="goiyprice">
+					650.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				<span class="phaidepsub">-19%</span>
+				<span class="goiygift">
+					Giảm thêm 100.000đ
+				</span>
+				<div class="phaidepstar">
+					<b>4.2</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(40)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			<div class="goiysp">
+				
+				<div class="phaidepimg" style="margin-top: 56;">
+					<img class="shop-item-image" src="mu1.jpeg">
+
+				</div>
+				<div class="phaidepname" style="margin-top: 20;">
+					Nón bucket thêu mặt cười - mũ tai bèo đẹp hot
+				</div>
+				<span class="goiygift">
+					Mua 2 tặng 1
+				</span>
+				<div class="goiyprice">
+					45.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				
+				<div class="phaidepstar">
+					<b>4.6</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(158)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			
+			<div class="goiysp">
+				
+				<div class="phaidepimg" style="margin-top: 56;">
+					<img class="shop-item-image" src="hop.jpeg">
+
+				</div>
+				
+				<div class="phaidepname" style="margin-top: 20;">
+					Hộp đựng khăn giấy, kệ để điện thoại 2in1 hộp đựng khăn giấy 
+				</div>
+				<div class="goiyprice">
+					55.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				
+				<div class="phaidepstar">
+					<b>4.8</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(233)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+
+		</div>
+		<div id="goiysp">
+			
+			
+			<div class="goiysp">
+				
+				<div class="phaidepimg" style="margin-top: 56;">
+					<img class="shop-item-image" src="hoa1.jpeg">
+
+				</div>
+				
+				<div class="phaidepname" style="margin-top: 20;">
+					Hoa giả tulip cao cấp Decor trang trí lọ để bàn 
+				</div>
+				<div class="goiyprice">
+					20.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				<span class="phaidepsub">-50%</span>
+				<div class="phaidepstar">
+					<b>4.8</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(20)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			<div class="goiysp">
+				<div class="limited" style="width: 55;">
+					Yêu thích
+				</div>
+				<div class="phaidepimg">
+					<img class="shop-item-image" src="tai.jpeg">
+
+				</div>
+				<div class="phaideppercent1">
+					<img style="width: 20;" src="percent1.png">
+					<span style="position: absolute; top: 5; right: 7;">GIẢM SỐC</span>
+					
+				</div>
+				<div class="phaidepname">
+					Tai Nghe Mèo Bluetooth Tai Mèo Dễ Thương Có Mic
+				</div>
+				<div class="goiyprice">
+					20.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				<span class="phaidepsub">-40%</span>
+				<span class="goiygift">
+					Miễn phí vận chuyển
+				</span>
+				<div class="phaidepstar">
+					<b>4.7</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(34)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			<div class="goiysp">
+				
+				<div class="phaidepimg" style="margin-top: 56;">
+					<img class="shop-item-image" src="vi.jpeg">
+
+				</div>
+				<div class="phaidepname" style="margin-top: 20;">
+					Ví Đựng Tiền Xu Hình Chim Cánh Cụt Hoạt Hình Đáng Yêu
+				</div>
+				<span class="goiygift">
+					Mua 2 tặng 1
+				</span>
+				<div class="goiyprice">
+					17.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				
+				<div class="phaidepstar">
+					<b>4.9</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(19)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			
+			<div class="goiysp">
+				
+				<div class="phaidepimg" style="margin-top: 56;">
+					<img class="shop-item-image" src="kinh.jpeg">
+
+				</div>
+				
+				<div class="phaidepname" style="margin-top: 20;">
+					Kính Mát Gọng Vuông Lớn Phong Cách Hàn Quốc
+				</div>
+				<div class="goiyprice">
+					14.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				
+				<div class="phaidepstar">
+					<b>4.6</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(47)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+			<div class="goiysp">
+				<div class="limited">
+					Yêu thích
+				</div>
+				<div class="phaidepimg">
+					<img class="shop-item-image" src="loa1.jpeg">
+
+				</div>
+				<div class="phaideppercent2">
+					<img style="width: 20;" src="percent2.png">
+					<span style="position: absolute; top: 5; right: 9;">GIÁ RẺ QUÁ</span>
+					
+				</div>
+				<div class="phaidepname">
+					Loa thông minh phát nhạc và điều khiển bằng giọng nói
+				</div>
+				<span class="goiygift">
+					Chỉ bán online
+				</span>
+				<div class="goiyprice">
+					620.000<span style="font-size: smaller">₫</span>
+					
+				</div>
+				
+				<div class="phaidepstar">
+					<b>5</b>
+					<i class="ti-star"></i>
+					<span class="starnumber">(8)</span>
+				</div>
+				<i class="ti-shopping-cart shop-item-button"></i>
+			</div>
+
+		</div>
+		<div id="footer">
+			<div id="footer1">
+				<ul>
+					<li>Tích điểm Quà tặng VIP</li>
+					<li>DV tặng quà tận nhà</li>
+					<li>Lịch sử mua hàng</li>
+					<li>Tư vấn về tặng quà</li>
+					<li>
+						Xem thêm
+						<i class="ti-angle-down"></i>
+					</li>
+				</ul>
+				<ul>
+					<li>Giới thiệu cửa hàng</li>
+					<li>Tuyền dụng</li>
+					<li>Gửi góp ý, khiếu nại</li>
+					<li>Tìm cửa hàng (shop)</li>
+					<li>Xem bản online</li>
+				</ul>
+				<ul>
+					<li><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</li>
+					<li>Gọi mua: <span>1800.1061</span> (7:30 - 22:00)</li>
+					<li>Khiếu nại: <span>1800.1063</span> (8:00 - 21:30)</li>
+					<li>Tư vấn: <span>1800.1065</span> (8:00 - 21:00)</li>
+				</ul>
+				<div id="footerimg">
+					<div id="footerxh">
+						<div>
+							<img src="fb.png" width="18">
+							<span>90.3k Fan</span>
+						</div>
+						<div>
+							<img src="yt.png" width="18">
+							<span>90.3k Fan</span>
+						</div>
+						<div>
+							<img src="zl.png" width="18">
+							<span>90.3k Fan</span>
+						</div>
+						
+					</div>
+					<div id="footercn">
+						<img src="ct.png" width="79">
+						<img src="cn.png" width="25">
+						<img src="pr.png" height="35">
+						<img src="sp.png" height="35">
+						<img src="th.png" height="35">
+					</div>
+					<span>Hỗ trợ thanh toán:</span>
+					<div id="footertt">
+						<img src="vi.png">
+						<img src="ma.png">
+						<img src="jc.png">
+						<img src="am.png">
+						<img src="at.png">
+						<img src="mo.png">
+						<img src="za.png">
+						<img src="vn.png">
+						<img src="kr.png">
+						<img src="sm.png">
+						
+						
+					</div>
+
+				</div>
+			</div>
+			<div id="footer2">
+				© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021.<br>Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Xem chính sách sử dụng
+			</div>
+		</div>
+		<div id="cart">
+			<h2>Giỏ hàng</h2>
+			<div id="cart-row">
+				<span style="width: 40%;">Mặt hàng</span>
+				<span>Giá</span>
+				<span>Số lượng</span>
+			</div>
+			<div class="cart-items">
+				
+			</div>
+			<div class="cart-total">
+				<b>Tổng</b>
+				<span class="cart-total-price"></span>
+			</div>
+			<button class="btn-purchase"><b>THANH TOÁN</b></button>
+
+		</div>
+		<ul id="goi">
+			<li><img src="signup.png" onclick="window.location.href = 'register.html'"></li>
+			<li><img src="signin.png" onclick="window.location.href = 'login.html'"></li>
+		</ul>
+	<script>
+		 
+	</script>
+    </body>
+</html>
